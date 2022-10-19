@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Body(header) Barra de Navegación---------- */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px;
+    flex-direction: row;
+}
+
+.containerObras{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px;
+    flex-direction: row;
+}
+
+.obras{
+    padding-right: 100px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+    padding-left: 20px;
+}
+
+.logo img:hover{
+    transform: scale(0.9);
+}
+
+.NavBar{
+    padding-right: 30px;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+.NavBarFlex li:hover{
+    transform: scale(0.9);
+}
+
+.NavBarFlex li a:hover{
+    color: blue;
+}
+
+.NavBarFlex li{ 
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.NavBarFlex a{ /* Estilo de texto */
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;;
+    text-decoration: none;
+    color: white;
+}
+
+/*  ----------Body(main) Index---------- */
+
+main{
+    background-color:  rgba(62, 65, 68, 0.9);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+
+}
+
+h2{
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.ohg a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.titulo{ /* Estilo de texto */
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    background-color: black;
+    height: 86px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ /*  ----------Body(main) Contacto---------- */
+
+.mainContacto{
+    height: 580px;
+    width: 1365px;
+}
+
+.tarjetaContacto img{
+    height: 450px;
+    width: 450px;
+}
+
+.containerContacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+
+/*  ----------Body(main) Obras---------- */
+
+.imagenObras img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mainObras{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.imagenObras{
+    flex: 25%;
+    padding: 10px;
+}
+
+/*  ----------Body(main) Nosotros---------- */
+
+.mainNosotros{
+    height: 720px;
+    width: 1365px;
+}
+
+.imagenNosotros img{
+    height: 350px;
+    width: 350px;
+}
+
+.textoNosotros p{
+    height: 200px;
+    width: 200px;
+}
+
+.containerNosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 100px;
+    align-items: center;
+}
+
+
+/*  ----------Body(main) seleccionObra---------- */
+.mainSeleccionObra{
+    height: 720px;
+    width: 1365px;
+}
+
+.cuerpoSeleccionObra img{
+    height: 150px;
+    width: 150px;
+}
+
+.cuerpoSeleccionObra h1{
+    font-size: 100px;
+}
+
+.containerSeleccionObra{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 10px;
+    row-gap: 100px;
+    align-items: center;
+}
+
+.imagenseleccionObra img{
+    height: 450px;
+    width: 250px;
+    align-items: center;
+}
+
+/*-----------  Responsive - INICIO con Grid -----------*/
+
+/* Tablet 600px */
+@media (max-width: 600px){
+    /* SECTION */
+    .container{
+        padding: 20px;
+        text-align: center;
+        
+    }
+    .box1 {
+    grid-column: 1 / 5;
+    }
+    .box2{
+        grid-column: 1/5;
+        padding: 10px;
+    } 
+    .box3{
+        grid-column: 1/5;
+        padding: 10px;
+    } 
+    .box4{
+        grid-column: 1/5;
+        padding: 10px;
+    }
+    /* FOOTER */
+    .footer1{
+        grid-column: 1/4;
+    }
+}
+
+/* Movile 320px */
+
+/* HEADER */
+@media (max-width: 320px){
+    .indexlogo img{
+        height: 50px;
+        margin-top: 8px;
+        justify-content: center;
+    }
+    .Titulo{
+        font-size: 20px;
+    }
+    .Eslogan{
+        font-size: 10px;
+    }
+
+    .box2 img{
+        height: 300px;
+        width: 250px;
+    }
+    .box3 img{
+        height: 300px;
+        width: 250px;
+    }
+    .box4 img{
+        height: 300px;
+        width: 250px;
+    }
+
+    /* FOOTER */
+    .footer1{
+        grid-column: 1/4;
+    }
+    .footer2{
+        grid-column: 1/4;
+    }
+    .footer3{
+        grid-column: 1/4;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+
+
+
+
+/*-----------  Responsive - OBRAS con FlexBox -----------*/
+
+/* Tablet 600px */
+
+@media (max-width: 600px){
+    /* ENCABEZADO */
+    .NavBarFlex a{
+        font-size: 20px;
+    }
+    .NavBar{
+        padding-right: 7px;
+    }
+    .logo img{
+        height: 50px;
+        margin-top: 8px;
+    }
+    /* IMAGENES */
+    .mainObras{
+        flex: 25%;
+        flex-direction: column;
+    }
+}
+
+/* Movile 320px */
+
+@media (max-width: 320px){
+    /* ENCABEZADO */
+    .containerObras{
+        flex-direction: column;
+    }
+    .NavBarFlex a{
+        font-size: 13px;
+    }
+    .NavBar{
+        padding-right: 7px;
+        margin-bottom: 10px;
+    }
+    .obrasLogo{
+    justify-content: center;
+    }
+    /* IMAGENES */
+    .mainObras{
+        flex: 25%;
+        flex-direction: column;
+    }
+}
