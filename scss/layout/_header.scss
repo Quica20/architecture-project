@@ -1,0 +1,119 @@
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0px;
+    flex-direction: row;
+}
+
+.obras{
+    padding-right: 100px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+    padding-left: 20px;
+}
+
+.logo img:hover{
+    transform: scale(0.9);
+}
+
+.NavBar{
+    padding-right: 30px;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+.NavBarFlex li:hover{
+    transform: scale(0.9);
+}
+
+.NavBarFlex li a:hover{
+    color: blue;
+}
+
+.NavBarFlex li{ 
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.NavBarFlex a{ /* Estilo de texto */
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;;
+    text-decoration: none;
+    color: white;
+}
+main{
+    background-color:  rgba(62, 65, 68, 0.9);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+
+}
+
+h2{
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.ohg a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.titulo{ /* Estilo de texto */
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    background-color: black;
+    height: 86px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
